@@ -1,0 +1,148 @@
+body {
+    background-color: rgb(237, 237, 237);
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+a {
+    color: rgb(86, 86, 86);
+    font-weight: bold;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: rgb(65, 65, 65);
+    outline: none;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-end;
+
+    .main-title {
+        font-size: 17px;
+        font-family: "DIN Alternate";
+        color: rgb(65, 65, 65);
+        font-weight: bold;
+    }
+
+    .sub-title {
+        font-size: 17px;
+        font-family: "Athelas";
+        color: rgb(65, 65, 65);
+    }
+
+    .img-title {}
+
+    .underline-box {
+        .underline {
+            margin-left: 40px;
+            border-bottom: 2px solid rgb(119, 119, 119);
+        }
+    }
+
+    nav {
+        .nav-bar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            a.active {
+                border-bottom: 2px solid #ee7f4d;
+            }
+        }
+    }
+}
+
+.phone-header {
+    .phone-title-box {
+        border-bottom: 2px solid #1d1d1d;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .phone-title {
+            flex: 1;
+
+            img {
+                width: 60px;
+            }
+        }
+
+        .phone-lab {
+            margin: 10px 0;
+            flex: 1;
+            text-align: center;
+
+            img {
+                width: 30px;
+            }
+        }
+
+        .phone-toggle-icon {
+            float: right;
+            flex: 1;
+            text-align: right;
+            cursor: pointer;
+
+            img {
+                width: 30px;
+            }
+        }
+    }
+
+    .navbar {
+        position: absolute;
+        width: 100%;
+        top: 66px;
+        left: 0;
+        background-color: rgb(237, 237, 237);
+        display: none;
+
+        &.show {
+            display: block;
+            z-index: 100;
+        }
+
+        ul {
+            padding: 20px 30px;
+
+            li {
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+            }
+
+            a.active {
+                border-bottom: 2px solid #ee7f4d;
+            }
+        }
+
+    }
+}
+
+footer {
+    margin-bottom: 20px;
+}

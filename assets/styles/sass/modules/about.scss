@@ -1,0 +1,139 @@
+.main-container {
+    .about-type-box {
+        width: 60%;
+        float: right;
+    }
+
+    .person1-box {
+        margin-top: 80px
+    }
+
+    .person2-box {
+        position: relative;
+        left: -80px;
+        top: 0;
+
+        img {
+            width: 140%;
+        }
+    }
+
+    .circle-box {
+        position: relative;
+        left: -80px;
+        top: 80px;
+
+        .circle {
+            width: 100%;
+            padding: 50% 0;
+            border-radius: 100%;
+            background-color: rgb(238, 127, 77);
+        }
+    }
+
+    .intro-box {
+        margin-top: 100px;
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .logo-box {
+        margin-top: 30px;
+
+        img {
+            filter: grayscale(1);
+            width: 20px;
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        img:hover {
+            filter: none;
+        }
+    }
+}
+
+.phone-main-container {
+    .img-about {
+        width: 80%;
+    }
+
+    .img-container {
+
+        .img1 {
+            display: block;
+            position: relative;
+            top: 30px;
+            left: 0;
+            width: 58%;
+        }
+
+        .img2 {
+            display: block;
+            position: relative;
+            top: -50px;
+            width: 30%;
+        }
+
+        .circle-box {
+            width: 20%;
+            position: relative;
+            left: 50%;
+            top: -100px;
+
+            .circle {
+                width: 100%;
+                padding: 50% 0;
+                border-radius: 100%;
+                background-color: rgb(238, 127, 77);
+            }
+        }
+
+        .intro-box {
+            position: relative;
+            top: -50px;
+            left: 0;
+
+            h3 {
+                font-size: 20px;
+                margin-bottom: 20px;
+
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .logo-box {
+            margin-top: -30px;
+
+            img {
+                filter: grayscale(1);
+                cursor: pointer;
+                width: 20px;
+                display: inline-block;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+
+            img:hover {
+                filter: none;
+            }
+        }
+    }
+}
+
+video {
+    margin: 30px 0 50px;
+}

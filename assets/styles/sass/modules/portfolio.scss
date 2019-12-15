@@ -1,0 +1,221 @@
+.main-container {
+    .name-box {
+        p {
+            font-size: 14px;
+            margin-bottom: 26px;
+        }
+
+        p.name {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    }
+
+    .title-box {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #666;
+
+        h3 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .hire-btn {
+            cursor: pointer;
+            float: right;
+            border: 3px solid #333;
+            background-color: rgb(237, 237, 237);
+            color: #333;
+            font-size: 12px;
+            padding: 4px 40px;
+            outline: none;
+        }
+    }
+
+    .gallery-box {
+        .portfolio {
+            position: relative;
+            display: block;
+            margin-top: 30px;
+            cursor: pointer;
+
+            .portfolio-content-box {
+                box-sizing: border-box;
+                position: absolute;
+                bottom: 0;
+                left: 15px;
+                width: calc(100% - 30px);
+                height: 0;
+                transition: all 0.2s ease-in-out;
+                overflow: hidden;
+
+
+                .cont-box {
+                    margin-top: 25%;
+                    margin-left: 10%;
+                    height: 50%;
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: space-around;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: rgb(237, 237, 237);
+                }
+            }
+
+            &:hover {
+                .portfolio-content-box {
+                    background-color: rgba(0, 0, 0, 0.4);
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+
+    .main-container {
+        margin-top: 30px;
+
+        .photo-box {
+            text-align: center;
+
+            img {
+                width: 30%;
+            }
+        }
+
+        .name-box {
+            text-align: center;
+            width: 50%;
+            margin: auto;
+
+            p.name {
+                font-size: 28px;
+            }
+        }
+
+        .title-box {
+            text-align: center;
+
+            .hire-btn {
+                float: none;
+
+            }
+
+            h3 {
+                font-size: 28px;
+                margin-top: 50px;
+            }
+
+            .date {
+                float: right;
+                font-size: 12px;
+                margin-right: 20px;
+            }
+        }
+
+        .gallery-box {
+            .portfolio {
+                width: 90%;
+                margin-left: 5%;
+
+                &:last-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+.portfolio-container {
+    margin-top: 80px;
+
+    .small-img {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+        margin-left: 10%;
+
+        img {
+            width: 50px;
+        }
+    }
+
+    .text1-box {
+        margin-top: 50px;
+        line-height: 16px;
+
+        p {
+            line-height: 26px;
+
+        }
+    }
+
+    .text2-box {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .next-btn {
+        cursor: pointer;
+        border: 2px solid #565656;
+        background-color: rgb(237, 237, 237);
+        color: #333;
+        font-size: 12px;
+        padding: 4px 40px;
+        outline: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-container {
+        text-align: center;
+
+        .main-img {
+            width: 60%;
+        }
+
+        .small-img {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+
+        .text1-box {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .text2-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .next-btn {}
+    }
+}

@@ -1,0 +1,110 @@
+.main-container {
+    .contact-container {
+        border-right: 1px solid rgb(149, 149, 149);
+        padding-right: 30px;
+
+        .contact-box {
+            margin-top: 40px;
+
+            h3 {
+                font-size: 26px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+
+    .form-box {
+        .input-box {
+            margin-top: 40px;
+
+            span {
+                display: block;
+            }
+
+            input {
+                background-color: rgb(237, 237, 237);
+                outline: none;
+                border: none;
+                border-bottom: 1px solid rgb(65, 65, 65);
+                width: 100%;
+                height: 30px;
+            }
+        }
+
+        .send-btn {
+            margin-top: 40px;
+            border: 2px solid #333;
+            background-color: rgb(237, 237, 237);
+            color: #333;
+            font-size: 12px;
+            padding: 4px 20px;
+            outline: none;
+            border-radius: 4px;
+        }
+    }
+
+    .info-container {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+            font-size: 26px;
+            margin-bottom: 30px;
+
+            .info {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        margin-left: 0;
+        margin-right: 0;
+
+        .info-container {
+            margin-top: 20px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgb(149, 149, 149);
+
+            h3,
+            p {
+                text-align: center;
+
+            }
+
+            .logo-box {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+
+        .form-row {
+            margin: 0;
+        }
+
+        .contact-container {
+            padding-right: 15px;
+            padding-left: 15px;
+            border: none;
+        }
+
+        .contact-box {
+            padding: 15px;
+        }
+    }
+
+    .footer {
+        margin-right: 20px;
+        padding-bottom: 20px;
+    }
+
+}
